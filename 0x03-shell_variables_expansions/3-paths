@@ -1,2 +1,4 @@
 #!/bin/bash
-echo $((`echo $PATH | grep -o ":/" | wc -l`+ 1))
+echo "PATH: $PATH"
+echo "Number of directories: $(( $(echo $PATH | grep -o ":/" | wc -l) + 1 ))"
+
